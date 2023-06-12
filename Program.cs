@@ -58,11 +58,17 @@ int[] InverseArray (int[] arr)
 int size =4;
 int  minNuber = 100;
 int maxNumber = 1000;
+int evenNumbers = 0;
 
 int[] array = new int [size];
 
 for (int i = 0; i < size; i++)
 {
     array[i] = new Random().Next(minNuber, maxNumber);
+    if (( array[i] % 2) == 0)
+    {
+        evenNumbers=evenNumbers+1;
+    }
+    
 }
-Console.WriteLine($"Массив: [ {String.Join("; ", array)} ]");
+Console.WriteLine($"Массив: [ {String.Join("; ", array)} ] четных чесел в массиве = {evenNumbers}");
