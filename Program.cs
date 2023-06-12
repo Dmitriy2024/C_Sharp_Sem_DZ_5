@@ -67,8 +67,14 @@ for (int i = 0; i < size; i++)
     array[i] = new Random().Next(minNuber, maxNumber);
     if (( array[i] % 2) == 0)
     {
-        evenNumbers=evenNumbers+1;
+        evenNumbers = evenNumbers + 1;
     }
-    
+    else
+    {
+        evenNumbers  =evenNumbers + 0;
+    }
 }
-Console.WriteLine($"Массив: [ {String.Join("; ", array)} ] четных чесел в массиве = {evenNumbers}");
+Console.WriteLine($"Массив: [ {String.Join("; ", array)} ] четных чисел в массиве = {evenNumbers}");
+
+//Задача 36: Задайте одномерный массив, заполненный случайными числами.
+// Найдите сумму элементов, стоящих на нечётных позициях.
