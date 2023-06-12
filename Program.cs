@@ -52,7 +52,7 @@ int[] InverseArray (int[] arr)
     return arr;
 */
 
-
+/*
 //Задача 34: Задайте массив заполненный случайными положительными трёхзначными числами.
 //Напишите программу, которая покажет количество чётных чисел в массиве.
 int size =4;
@@ -75,6 +75,27 @@ for (int i = 0; i < size; i++)
     }
 }
 Console.WriteLine($"Массив: [ {String.Join("; ", array)} ] четных чисел в массиве = {evenNumbers}");
+*/
 
+/*
 //Задача 36: Задайте одномерный массив, заполненный случайными числами.
 // Найдите сумму элементов, стоящих на нечётных позициях.
+int size =4;
+int  minNuber = -100;
+int maxNumber = 101;
+int sumEven = 0;
+
+int[] array = new int [size];
+
+for (int i = 0; i < size; i++)
+{
+    array[i] = new Random().Next(minNuber, maxNumber);   
+}
+
+for (int i = 0; i < size; i = i + 2)
+{
+sumEven = sumEven + array[i];
+}
+
+Console.WriteLine($"Массив: [ {String.Join("; ", array)} ] сумму элементов, стоящих на нечётных позициях = { sumEven}");
+*/
